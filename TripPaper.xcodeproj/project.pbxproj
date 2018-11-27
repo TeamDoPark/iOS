@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B90BE0F097B3C689D010ECD /* Pods_TripPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D20CEE02360BE59143A9276 /* Pods_TripPaper.framework */; };
 		8E2FDDF421AD0F1200810A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FDDF321AD0F1200810A9E /* AppDelegate.swift */; };
-		8E2FDDF621AD0F1200810A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FDDF521AD0F1200810A9E /* ViewController.swift */; };
+		8E2FDDF621AD0F1200810A9E /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FDDF521AD0F1200810A9E /* MainListViewController.swift */; };
 		8E2FDDF921AD0F1200810A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2FDDF721AD0F1200810A9E /* Main.storyboard */; };
 		8E2FDDFB21AD0F1300810A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2FDDFA21AD0F1300810A9E /* Assets.xcassets */; };
 		8E2FDDFE21AD0F1300810A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2FDDFC21AD0F1300810A9E /* LaunchScreen.storyboard */; };
@@ -20,11 +20,15 @@
 		7990B0B863FB523D7CF7166F /* Pods-TripPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripPaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripPaper/Pods-TripPaper.release.xcconfig"; sourceTree = "<group>"; };
 		8E2FDDF021AD0F1200810A9E /* TripPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2FDDF321AD0F1200810A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E2FDDF521AD0F1200810A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E2FDDF521AD0F1200810A9E /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		8E2FDDF821AD0F1200810A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E2FDDFA21AD0F1300810A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E2FDDFD21AD0F1300810A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E2FDDFF21AD0F1300810A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2FDE1B21AD141300810A9E /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundB.ttf; path = "../../../../../Volumes/나눔스퀘어라운드 맥용 TTF/NanumSquareRoundB.ttf"; sourceTree = "<group>"; };
+		8E2FDE1C21AD141300810A9E /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundL.ttf; path = "../../../../../Volumes/나눔스퀘어라운드 맥용 TTF/NanumSquareRoundL.ttf"; sourceTree = "<group>"; };
+		8E2FDE1D21AD141300810A9E /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundR.ttf; path = "../../../../../Volumes/나눔스퀘어라운드 맥용 TTF/NanumSquareRoundR.ttf"; sourceTree = "<group>"; };
+		8E2FDE1E21AD141300810A9E /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundEB.ttf; path = "../../../../../Volumes/나눔스퀘어라운드 맥용 TTF/NanumSquareRoundEB.ttf"; sourceTree = "<group>"; };
 		93C1AB29ECFC24498F167B19 /* Pods-TripPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripPaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripPaper/Pods-TripPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,98 @@
 		8E2FDDF221AD0F1200810A9E /* TripPaper */ = {
 			isa = PBXGroup;
 			children = (
-				8E2FDDF321AD0F1200810A9E /* AppDelegate.swift */,
-				8E2FDDF521AD0F1200810A9E /* ViewController.swift */,
-				8E2FDDF721AD0F1200810A9E /* Main.storyboard */,
-				8E2FDDFA21AD0F1300810A9E /* Assets.xcassets */,
-				8E2FDDFC21AD0F1300810A9E /* LaunchScreen.storyboard */,
-				8E2FDDFF21AD0F1300810A9E /* Info.plist */,
+				8E2FDE0C21AD126000810A9E /* AppDelegate */,
+				8E2FDE0621AD11FD00810A9E /* Utility */,
+				8E2FDE0821AD122700810A9E /* Model */,
+				8E2FDE1921AD136F00810A9E /* Services */,
+				8E2FDE1021AD129E00810A9E /* ViewController */,
+				8E2FDE1721AD12E600810A9E /* View */,
+				8E2FDE1821AD136000810A9E /* Cell */,
+				8E2FDE1621AD12E300810A9E /* Resource */,
+				8E2FDE1221AD12C800810A9E /* Supporting File */,
 			);
 			path = TripPaper;
+			sourceTree = "<group>";
+		};
+		8E2FDE0621AD11FD00810A9E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		8E2FDE0821AD122700810A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E2FDE0C21AD126000810A9E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8E2FDDF321AD0F1200810A9E /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8E2FDE1021AD129E00810A9E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8E2FDDF521AD0F1200810A9E /* MainListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8E2FDE1221AD12C800810A9E /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				8E2FDE1A21AD139D00810A9E /* Font */,
+				8E2FDDFF21AD0F1300810A9E /* Info.plist */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
+		8E2FDE1621AD12E300810A9E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8E2FDDFA21AD0F1300810A9E /* Assets.xcassets */,
+				8E2FDDFC21AD0F1300810A9E /* LaunchScreen.storyboard */,
+				8E2FDDF721AD0F1200810A9E /* Main.storyboard */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		8E2FDE1721AD12E600810A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E2FDE1821AD136000810A9E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		8E2FDE1921AD136F00810A9E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8E2FDE1A21AD139D00810A9E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8E2FDE1B21AD141300810A9E /* NanumSquareRoundB.ttf */,
+				8E2FDE1E21AD141300810A9E /* NanumSquareRoundEB.ttf */,
+				8E2FDE1C21AD141300810A9E /* NanumSquareRoundL.ttf */,
+				8E2FDE1D21AD141300810A9E /* NanumSquareRoundR.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		FFC3B54677859C689691D613 /* Pods */ = {
@@ -208,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2FDDF621AD0F1200810A9E /* ViewController.swift in Sources */,
+				8E2FDDF621AD0F1200810A9E /* MainListViewController.swift in Sources */,
 				8E2FDDF421AD0F1200810A9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
